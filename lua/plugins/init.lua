@@ -25,6 +25,17 @@ local packer = require('packer').startup(
         use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
         use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
 
+        -- Syntax
+        use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
+        -- File Explorer
+        use {
+            'kyazdani42/nvim-tree.lua',
+            requires = {
+                'kyazdani42/nvim-web-devicons',
+            }
+        }
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -37,5 +48,11 @@ local packer = require('packer').startup(
 require('plugins/one-nvim')
 require('plugins/nvim-bufferline')
 require('plugins/lualine-nvim')
+
+-- Syntax
+require'plugins/nvim-treesitter'
+
+-- File Explorer
+require'plugins/nvim-tree'
 
 return packer
