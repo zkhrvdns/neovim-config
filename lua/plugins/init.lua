@@ -21,6 +21,9 @@ local packer = require('packer').startup(
     function(use)
         -- Theme
         use 'Th3Whit3Wolf/one-nvim'
+        use 'kyazdani42/nvim-web-devicons'
+        use {'akinsho/nvim-bufferline.lua', requires = 'kyazdani42/nvim-web-devicons'}
+        use {'nvim-lualine/lualine.nvim', requires = {'kyazdani42/nvim-web-devicons', opt = true}}
 
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
@@ -32,5 +35,7 @@ local packer = require('packer').startup(
 
 -- Theme
 require('plugins/one-nvim')
+require('plugins/nvim-bufferline')
+require('plugins/lualine-nvim')
 
 return packer

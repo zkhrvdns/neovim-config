@@ -34,17 +34,28 @@
 <a name="plugins"></a>
 ## Plugins
 
-### [Packer](https://github.com/wbthomason/packer.nvim)
+### Icons
 
-Unix, Linux Installation
+[nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons)
 
-```
-git clone --depth 1 https://github.com/wbthomason/packer.nvim\ 
-~/.local/share/nvim/site/pack/packer/start/packer.nvim
-```
+Dependencies:
+
+- Nerd Font
+
+   ```
+   cp 'Hack Regular Nerd Font Complete.ttf' ~/.local/share/fonts
+   ```
 
 <a name="lsp"></a>
 ## LSP 
 
 <a name="links"></a>
 ## Links 
+
+1. [Neovim](https://github.com/neovim/neovim)
+
+2. [Neovim Documentation](https://neovim.io/doc/user/)
+
+3. [Awesome Neovim](https://github.com/rockerBOO/awesome-neovim)
+
+4. [nvim-lua-guide](https://github.com/nanotee/nvim-lua-guide)
