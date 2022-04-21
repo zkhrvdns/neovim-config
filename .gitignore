@@ -1,0 +1,9 @@
+# Blacklist
+/*
+
+# Whitelist
+!/lua/
+!/.gitignore
+!/init.lua
+!/LICENSE
+!/README.md

@@ -4,6 +4,12 @@
 
 1. [Installation](#installation)
 
+2. [Plugins](#plugins)
+
+3. [LSP](#lsp)
+
+4. [Links](#links)
+
 <a name="installation"></a>
 ## Installation
 
@@ -24,3 +30,21 @@
    echo $PATH
    sudo mv nvim /usr/bin
    ```
+
+<a name="plugins"></a>
+## Plugins
+
+### [Packer](https://github.com/wbthomason/packer.nvim)
+
+Unix, Linux Installation
+
+```
+git clone --depth 1 https://github.com/wbthomason/packer.nvim\ 
+~/.local/share/nvim/site/pack/packer/start/packer.nvim
+```
+
+<a name="lsp"></a>
+## LSP 
+
+<a name="links"></a>
+## Links 
