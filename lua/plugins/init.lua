@@ -64,6 +64,13 @@ local packer = require('packer').startup(
         use 'jiangmiao/auto-pairs'
         use 'norcalli/nvim-colorizer.lua'
 
+        -- Comment
+        use 'b3nj5m1n/kommentary'
+        use 'JoosepAlviste/nvim-ts-context-commentstring'
+
+        -- Formatter
+        use 'mhartington/formatter.nvim'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -97,5 +104,12 @@ require'plugins/lspsaga'
 require'plugins/nvim-ts-autotag'
 require'plugins/auto-pairs'
 require'plugins/nvim-colorizer'
+
+-- Comment
+require'plugins/kommentary'
+require'plugins/nvim-ts-context-commentstring'
+
+-- Formatter
+require'plugins/formatter'
 
 return packer

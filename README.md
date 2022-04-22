@@ -67,6 +67,48 @@ Dependencies:
    sudo pip3 install ueberzug
    ```
 
+### Formatter
+
+[formatter](https://github.com/mhartington/formatter.nvim)
+
+Dependencies:
+
+- [Prettier](https://github.com/prettier/prettier)
+
+   ```
+   npm install -g prettier
+   ```
+
+### Linter
+
+[nvim-lsp-ts-utils](https://github.com/jose-elias-alvarez/nvim-lsp-ts-utils)
+
+Dependencies:
+
+- [Eslint_d](https://github.com/mantoni/eslint_d.js)
+
+   ```
+   npm install -g eslint_d
+   ```
+
+### Markdown
+
+[nvim-markdown-preview](https://github.com/davidgranstrom/nvim-markdown-preview)
+
+Dependencies:
+
+- [pandoc](https://pandoc.org/)
+
+    ```
+    sudo apt install pandoc
+    ```
+
+- [live-server](https://github.com/tapio/live-server)
+
+    ```
+    npm install -g live-server
+    ```
+
 <a name="lsp"></a>
 ## LSP 
 
