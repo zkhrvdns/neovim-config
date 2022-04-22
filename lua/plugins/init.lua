@@ -59,6 +59,11 @@ local packer = require('packer').startup(
         use 'glepnir/lspsaga.nvim'
         use 'nanotee/sqls.nvim'
 
+        -- Editing support
+        use 'windwp/nvim-ts-autotag'
+        use 'jiangmiao/auto-pairs'
+        use 'norcalli/nvim-colorizer.lua'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -87,5 +92,10 @@ require'plugins/lspkind-nvim'
 
 -- Native LSP
 require'plugins/lspsaga'
+
+-- Editing support
+require'plugins/nvim-ts-autotag'
+require'plugins/auto-pairs'
+require'plugins/nvim-colorizer'
 
 return packer

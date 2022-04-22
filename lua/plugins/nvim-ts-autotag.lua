@@ -1,0 +1,5 @@
+-- https://github.com/windwp/nvim-ts-autotag
+
+require('nvim-ts-autotag').setup {
+    filetypes = {'html', 'xml', 'javascript', 'javascriptreact', 'typescriptreact'},
+}
