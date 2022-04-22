@@ -76,6 +76,15 @@ local packer = require('packer').startup(
         use {'tanvirtin/vgit.nvim', requires = {'nvim-lua/plenary.nvim'}}
         use 'ttys3/nvim-blamer.lua'
 
+        -- Debug
+        use 'mfussenegger/nvim-dap'
+
+        -- AutoSave
+        use '907th/vim-auto-save'
+
+        -- Markdown
+        use 'davidgranstrom/nvim-markdown-preview'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -121,5 +130,14 @@ require'plugins/formatter'
 require'plugins/vim-fugitive'
 require'plugins/vgit'
 require'plugins/nvim-blamer'
+
+-- Debug
+require'plugins/nvim-dap'
+
+-- AutoSave
+require'plugins/vim-auto-save'
+
+-- Markdown
+require'plugins/nvim-markdown-preview'
 
 return packer

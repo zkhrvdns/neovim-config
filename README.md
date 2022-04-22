@@ -31,6 +31,17 @@
    sudo mv nvim /usr/bin
    ```
 
+### Optional dependencies
+
+- xclip
+
+   ```
+   sudo apt update
+   sudo apt install xclip
+   ```
+
+  See ```:help clipboard``` for details and options
+
 <a name="plugins"></a>
 ## Plugins
 
