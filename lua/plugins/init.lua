@@ -46,6 +46,19 @@ local packer = require('packer').startup(
         use 'hrsh7th/nvim-compe'
         use 'onsails/lspkind-nvim'
 
+        -- LSP
+        use 'neovim/nvim-lspconfig'
+        use {
+            'jose-elias-alvarez/nvim-lsp-ts-utils',
+            requires = {
+                'neovim/nvim-lspconfig',
+                'nvim-lua/plenary.nvim',
+                'jose-elias-alvarez/null-ls.nvim',
+            },
+        }
+        use 'glepnir/lspsaga.nvim'
+        use 'nanotee/sqls.nvim'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -71,5 +84,8 @@ require'plugins/telescope'
 -- Autocomplete
 require'plugins/nvim-compe'
 require'plugins/lspkind-nvim'
+
+-- Native LSP
+require'plugins/lspsaga'
 
 return packer
