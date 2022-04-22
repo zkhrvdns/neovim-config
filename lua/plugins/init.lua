@@ -71,6 +71,11 @@ local packer = require('packer').startup(
         -- Formatter
         use 'mhartington/formatter.nvim'
 
+        -- Git
+        use 'tpope/vim-fugitive'
+        use {'tanvirtin/vgit.nvim', requires = {'nvim-lua/plenary.nvim'}}
+        use 'ttys3/nvim-blamer.lua'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -111,5 +116,10 @@ require'plugins/nvim-ts-context-commentstring'
 
 -- Formatter
 require'plugins/formatter'
+
+-- Git
+require'plugins/vim-fugitive'
+require'plugins/vgit'
+require'plugins/nvim-blamer'
 
 return packer
