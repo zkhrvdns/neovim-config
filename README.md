@@ -123,6 +123,132 @@ Dependencies:
 <a name="lsp"></a>
 ## LSP 
 
+### html
+
+```
+npm install -g vscode-html-languageserver-bin
+```
+
+### cssls
+
+```
+npm install -g vscode-css-languageserver-bin
+```
+
+### tsserver
+
+```
+npm install -g typescript typescript-language-server
+```
+
+### jdtls
+
+1. Install [Language server for Java](https://github.com/eclipse/eclipse.jdt.ls)
+
+2. (Optional) Move in directory '/opt'
+
+   ```
+   mv ~/Downloads/eclipse.jdt.ls /opt/eclipse.jdt.ls
+   ```
+
+3. Set environment variables
+
+   ```
+   whereis java
+   java: /usr/bin/java /usr/share/java /usr/share/man/man1/java.1.gz
+    
+   ls -l /usr/bin/java
+   lrwxrwxrwx 1 root root 22 мар 22 13:43 /usr/bin/java -> /etc/alternatives/java
+    
+   ls -l /etc/alternatives/java
+   lrwxrwxrwx 1 root root 43 мар 22 13:43 /etc/alternatives/java -> /usr/lib/jvm/java-11-openjdk-amd64/bin/java
+   ```
+
+   ```
+   nvim ~/.bashrc.
+   . ~/.bashrc
+   env | grep JAR
+   ```
+
+   ```
+   # nvim
+   export JAR=/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.100.v20201223-0822.jar
+   export GRADLE_HOME=$HOME/snap/gradle
+   export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+   export JDTLS_CONFIG=/opt/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux
+   export WORKSPACE=$HOME/workspace
+   ```
+
+### jsonls
+
+```
+npm install -g vscode-json-languageserver
+```
+
+### yamlls
+
+```
+npm install -g yaml-language-server
+```
+
+### bashls
+
+```
+npm install -g bash-language-server
+```
+
+### sqls
+
+1. Install [sqls](https://github.com/lighttiger2505/sqls)
+
+   ```
+   sudo snap install go --classic
+   go get github.com/lighttiger2505/sqls
+   ```
+
+2. Find sqls location. Required in settings.
+
+   ```
+   sudo find / -wholename '*/bin/sqls'
+   ```
+
+3. (Optional) Set configuration in file: ~/.config/sqls/config.yaml
+
+   ```
+   connections:
+   - driver: postgresql
+     dataSourceName: 'host=127.0.0.1 port=5432 user=postgres password=postgres dbname=postgres sslmode=disable'
+   ```
+
+### graphql
+
+```
+npm install -g graphql-language-service-cli
+```
+
+### dockerls
+
+```
+npm install -g dockerfile-language-server-nodejs
+```
+
+### sumneko_lua
+
+1. Install [lua-language-server](https://github.com/sumneko/lua-language-server/wiki/Build-and-Run-(Standalone))
+
+2. (Optional) Move in directory '/opt'
+
+   ```
+   mv ~/Downloads/lua-language-server /opt/lua-language-server
+   ```
+
+3. Make sure that the root and binary paths are pointing to the correct installation location
+
+   ```
+   local sumneko_root_path = '/opt/lua-language-server'
+   local sumneko_binary = sumneko_root_path..'/bin/Linux/lua-language-server'
+   ```
+
 <a name="links"></a>
 ## Links 
 
