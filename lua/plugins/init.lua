@@ -36,6 +36,12 @@ local packer = require('packer').startup(
             }
         }
 
+        -- Fuzzy Finder
+        use {'nvim-telescope/telescope.nvim', requires = {'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim'}}
+        use 'nvim-telescope/telescope-media-files.nvim'
+        use 'nvim-telescope/telescope-symbols.nvim'
+        use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -54,5 +60,8 @@ require'plugins/nvim-treesitter'
 
 -- File Explorer
 require'plugins/nvim-tree'
+
+-- Fuzzy Finder
+require'plugins/telescope'
 
 return packer

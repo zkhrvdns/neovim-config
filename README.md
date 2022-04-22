@@ -46,6 +46,27 @@ Dependencies:
    cp 'Hack Regular Nerd Font Complete.ttf' ~/.local/share/fonts
    ```
 
+### Fuzzy Finder
+
+[telescope](https://github.com/nvim-telescope/telescope.nvim)
+
+[telescope-media-files](https://github.com/nvim-telescope/telescope-media-files.nvim)
+
+Dependencies:
+
+- [BurntSushi/ripgrep](https://github.com/BurntSushi/ripgrep) (finder)
+
+   ```
+   sudo apt install ripgrep
+   ```
+
+- [Ueberzug](https://github.com/seebye/ueberzug) (required for image support)
+
+   ```
+   sudo apt install python3-pip libxext-dev
+   sudo pip3 install ueberzug
+   ```
+
 <a name="lsp"></a>
 ## LSP 
 
