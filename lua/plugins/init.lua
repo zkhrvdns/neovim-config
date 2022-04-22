@@ -42,6 +42,10 @@ local packer = require('packer').startup(
         use 'nvim-telescope/telescope-symbols.nvim'
         use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make'}
 
+        -- Autocomplete
+        use 'hrsh7th/nvim-compe'
+        use 'onsails/lspkind-nvim'
+
         -- Automatically set up your configuration after cloning packer.nvim
         -- Put this at the end after all plugins
         if packer_bootstrap then
@@ -63,5 +67,9 @@ require'plugins/nvim-tree'
 
 -- Fuzzy Finder
 require'plugins/telescope'
+
+-- Autocomplete
+require'plugins/nvim-compe'
+require'plugins/lspkind-nvim'
 
 return packer
