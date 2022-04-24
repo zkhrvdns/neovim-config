@@ -1,4 +1,4 @@
--- https://github.com/akinsho/nvim-bufferline.lua
+-- https://github.com/akinsho/bufferline.nvim
 
 require('bufferline').setup {
     options = {
